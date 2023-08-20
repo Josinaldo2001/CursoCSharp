@@ -8,5 +8,16 @@ namespace CursoCSharp.EstruturaDeControle
 {
     internal class EstruturaForEach
     {
+        public static void Executar()
+        {
+            string Palavras = "Grande dia";
+
+            foreach (var letra in Palavras)
+            {
+                Console.WriteLine(letra);
+            }
+
+        }
+
     }
 }
