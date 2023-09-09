@@ -5,9 +5,12 @@ using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.ClassesEMetodos;
 
-namespace CursoCSharp {
-    class Program {
-        static void Main(string[] args) {
+namespace CursoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
                 {"Comentários - Fundamentos", Comentarios.Executar},
@@ -34,8 +37,24 @@ namespace CursoCSharp {
                 {"For - Estrutura de controle", EstruturaFor.Executar},
                 {"ForEach - Estrutura de controle", EstruturaForEach.Executar},
 
-                //{"Desafio Atributo", DesafioAtributo.Executar},
-                
+                //Classes e métodos
+
+                {"Desafio Atributo - Classes e métodos", DesafioAtributo.Executar},
+                {"Membros - Classes e métodos", Membros.Executar},
+                {"Contrutores - Classes e métodos", Construtores.Executar},
+                {"Métodos com retorno - Classes e métodos", MetodosComRetorno.Executar},
+                {"Métodos estáticos - Classes e métodos", MetodosEstaticos.Executar},
+                {"Atributos estáticos - Classes e métodos", AtributosEstaticos.Executar},
+                {"Parâmetros Variáveis - Classes e métodos", ParametrosVariaveis.Executar},
+                {"Parâmetros nomeados - Classes e métodos", ParametrosNomeados.Executar},
+                {"GettersSeters - Classes e métodos", GettersSeters.Executar},
+                {"Props - Classes e métodos", Props.Executar},
+                {"ReadOnly - Classes e métodos", ReadOnly.Executar},
+                {"Ennum - Classes e métodos", ExemploEnum.Executar},
+                {"Struct - Classes e métodos", Struct.Executar},
+                //{"Pessoa", Pessoa.Executar},
+
+
             });
 
             central.SelecionarEExecutar();
